@@ -1,0 +1,48 @@
+:root{
+    --green: darkgreen;
+    --white: white;
+    --black: black;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg);
+    color: var(--fontColor);
+}
+
+ul{
+    font-family:  helvetica;
+}
+li{
+    list-style:circle;
+}
+.list{
+    list-style: square;
+}
+
+
+.lightTheme{
+    --bg: var(--green);
+    --fontColor: var(--black);
+    /* color: #000;
+    background-color:aquamarine ; */
+    --btnColor: --black;
+
+
+}
+.darkTheme{
+    --fontColor: green;
+    --bg: var(--black);
+    /* color:white;
+    background-color: black ; */
+    --btnColor: var(--green);
+}
+.btn{
+    color: var(--btnColor);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+}
