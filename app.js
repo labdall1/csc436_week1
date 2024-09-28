@@ -1,5 +1,5 @@
 'use strict'
-const switcher = document.querySelector('.btn'); 
+const switcher = document.querySelector('.mybtn'); 
 
 switcher.addEventListener('click', function() { 
     document.body.classList.toggle('lightTheme'); 
@@ -12,3 +12,11 @@ switcher.addEventListener('click', function() {
         this.textContent = "Light"; 
     } 
 });
+
+
+const myModal = document.getElementById('exampleModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
